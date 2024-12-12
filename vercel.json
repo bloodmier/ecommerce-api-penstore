@@ -8,12 +8,8 @@
     ],
     "routes": [
       {
-        "src": "/products/([a-zA-Z0-9]{24})",
-        "dest": "/products/:id"
-      },
-      {
         "src": "/products/(.*)",
-        "dest": "/products/$1"
+        "dest": "/products/:id"
       },
       {
         "src": "/(.*)",
@@ -21,4 +17,5 @@
       }
     ]
   }
+  
   
