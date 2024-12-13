@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     console.log('Förfrågan mottagen med ID:', req.params.id);
     if (!ObjectId.isValid(req.params.id)) {
-        console.log('Felaktigt ID-format');
+        console.log('Felaktigt format på ID');
         return res.status(400).json({ message: 'Felaktigt ID-format' });
     }
 
